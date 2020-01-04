@@ -1,0 +1,19 @@
+#%RAML 1.0 User
+description: Manages the user on the server
+/{username}/saved:
+  get:
+    description: Returns posts saved by the user. 
+    responses: 
+      200:
+        description: The user and its data
+        body:
+          text/html; charset=UTF-8:
+      404:
+        description: The user could not be found
+        body:
+          application/json:
+            example: |
+              {
+                "title":"Error",
+                "body":"The user could not be found"
+              }
