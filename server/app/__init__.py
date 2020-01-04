@@ -1,5 +1,5 @@
 from flask import Flask
-from app.test_module.routes import test_module
+from app.saved_content.controller import test_module
 
 app = Flask(__name__)
 
